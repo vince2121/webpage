@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="https://i.postimg.cc/gcZdykyW/jeep.png">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="https://i.postimg.cc/gcZdykyW/jeep.png" alt="car logo"></a>
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#ride">Ride</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="contact-section" id="contact">
+            <div class="heading">
+                <span>Contact Us</span>
+                <h1>We'd Love to Hear From You</h1>
+            </div>
+            <div class="contact-container">
+                <form class="contact-form" id="contactFormPage">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required style="min-height:100px"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3><i class="ri-contacts-line"></i> Contact Details</h3>
+                    <p><i class="ri-mail-line"></i> Kyla@email.com</p>
+                    <p><i class="ri-map-pin-line"></i> New York, USA</p>
+                    <p><i class="ri-phone-line"></i> +1 234 567 8900</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100094133625024&mibextid=kFxxJD"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-x-line"></i></a>
+                        <a href="https://www.instagram.com/kyymclt?igsh=MW43cGYybWVsNG12Zw=="><i class="ri-instagram-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+    document.getElementById('contactFormPage').onsubmit = function(e) {
+        e.preventDefault();
+        alert('Thank you for contacting us!');
+        this.reset();
+    };
+    </script>
+</body>
+</html>
